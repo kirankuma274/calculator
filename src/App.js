@@ -15,7 +15,8 @@ function handleclear(){
 }
 
 function handlecalculation(){
-      let result=eval(input)
+         const result = new Function('return ' + input)();       //let result=eval(input)
+
       updateinput(result)
 }
 
